@@ -1,0 +1,7 @@
+runCIPipeline(application: "helloworld",
+              project: "helloworld",
+              agent: "nodejs",
+              compileCommands: "npm install && npm audit fix",
+              testCommands: "",
+              artifactsDir: ".",
+              applicationTemplate: "./openshift/template.yaml")
