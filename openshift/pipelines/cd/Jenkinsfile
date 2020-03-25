@@ -4,4 +4,5 @@ runCDPipeline(application: "helloworld",
               compileCommands: "npm install && npm audit fix",
               testCommands: "",
               artifactsDir: ".",
-              applicationTemplate: "./openshift/template.yaml")
+              applicationTemplate: "./openshift/template.yaml",
+              useExternalRegistry: true)
